@@ -2,3 +2,4 @@
 
 export(dijkstra)
 export(euclidean)
+importFrom(stats,setNames)
