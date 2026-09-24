@@ -1,26 +1,27 @@
-
 # Lab3
 
-<!-- badges: start -->
 [![R-CMD-check](https://github.com/wwwzyccc777/Lab3/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/wwwzyccc777/Lab3/actions/workflows/R-CMD-check.yaml)
-<!-- badges: end -->
 
-The goal of Lab3 is to ...
+Lab3 is an R package implementing the Euclidean algorithm for finding
+the greatest common divisor and Dijkstra's algorithm for finding
+shortest paths in a weighted graph.
 
 ## Installation
 
-You can install the development version of Lab3 like so:
+You can install the development version from GitHub with:
 
-``` r
-# FILL THIS IN! HOW CAN PEOPLE INSTALL YOUR DEV PACKAGE?
+```r
+devtools::install_github("wwwzyccc777/Lab3")
 ```
 
 ## Example
 
-This is a basic example which shows you how to solve a common problem:
-
-``` r
+```r
 library(Lab3)
-## basic example code
-```
 
+euclidean(100, 1000)
+
+data(wiki_graph)
+dijkstra(wiki_graph, 1)
+dijkstra(wiki_graph, 3)
+```
